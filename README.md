@@ -14,12 +14,97 @@ Setting a Bit: To set (turn on) a particular bit, the program uses OR (|) with a
 
 Resetting a Bit: To reset (turn off) a bit, the program uses AND (&) with the complement of the left-shifted mask, ensuring only the targeted bit is cleared.
 
-Program 1 Algorithm:
+Program 1: Bitwise Operations
 
-Start Initialize integers a = 13, b = 14 Perform and store results of: a & b → AND a | b → OR ~a and ~b → NOT a ^ b → XOR a << 1, b << 1 → Left Shift a >> 1, b >> 1 → Right Shift Print all results End
+ Step-wise Algorithm
 
-Program 2: Bit Set and Reset Algorithm:
+1. Start the program.
 
-Start Initialize integer a = 230 Input bit position to set → bit_set Set bit using a | (1 << bit_set) Input bit position to reset → bit_reset Reset bit using a & (~(1 << bit_reset)) Print results of both operations End
+
+2. Initialize two integers:
+
+a = 13
+
+b = 14
+
+
+
+3. Perform and store the following bitwise operations:
+
+and_result = a & b → Bitwise AND
+
+or_result = a | b → Bitwise OR
+
+not_a = ~a → Bitwise NOT of a
+
+not_b = ~b → Bitwise NOT of b
+
+xor_result = a ^ b → Bitwise XOR
+
+left_shift_a = a << 1 → Left Shift a by 1
+
+left_shift_b = b << 1 → Left Shift b by 1
+
+right_shift_a = a >> 1 → Right Shift a by 1
+
+right_shift_b = b >> 1 → Right Shift b by 1
+
+
+
+4. Display all results:
+
+AND, OR, NOT, XOR, Left Shift, and Right Shift values
+
+
+
+5. End the program.
+
+
+
+
+Program 2: Bit Set and Bit Reset
+
+Step-wise Algorithm
+
+1. Start the program.
+
+
+2. Initialize an integer a = 230.
+
+
+3. Prompt the user to enter the bit position to set.
+
+
+4. Read input into bit_set.
+
+
+5. Set the specified bit using:
+
+set_result = a | (1 << bit_set)
+
+
+
+6. Prompt the user to enter the bit position to reset.
+
+
+7. Read input into bit_reset.
+
+
+8. Reset the specified bit using:
+
+reset_result = a & (~(1 << bit_reset))
+
+
+
+9. Display the results:
+
+Result after setting the bit
+
+Result after resetting the bit
+
+
+
+10. End the program.
+
 
 Conclusion: Hence, we performed the Bitwise Operations on numbers given as input and we have reset and set the given digits of a binary number.
